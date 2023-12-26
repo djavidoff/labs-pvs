@@ -1,0 +1,17 @@
+
+<a asp-action="Index" asp-controller="Home">Home</a>
+
+<input asp-for="UserName" />
+
+<form asp-action="Login" asp-controller="Account" method="post">
+    <input asp-for="UserName" />
+    <input asp-for="Password" />
+    <button type="submit">Login</button>
+</form>
+
+<p>Name: <span asp-for="Name"></span></p>
+<p>Age: <span asp-for="Age"></span></p>
+
+<div class="error">
+    <span asp-validation-for="UserName"></span>
+</div>
