@@ -1,0 +1,13 @@
+
+public interface IMyService
+{
+    void DoSomething();
+}
+
+public class MyService : IMyService
+{
+    public void DoSomething()
+    {
+        Console.WriteLine("Doing something...");
+    }
+}
